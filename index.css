@@ -1,0 +1,46 @@
+
+
+body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #1e1e2f, #0f0f1e, pink, #0f0f1e);
+      background-size: 400% 400%;
+      animation: gradientBackground 15s ease infinite;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: white;
+    }
+
+    @keyframes gradientBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    button {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid darkgrey;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      transform: scale(1.05);
+    }
+    
+    
+
+img {
+    width: 100px;
+}
